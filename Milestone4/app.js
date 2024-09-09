@@ -1,7 +1,6 @@
 "use strict";
 const form = document.getElementById('resume-form');
 const resumeContainer = document.getElementById('generated-resume');
-const downloadBtn = document.getElementById('download-pdf');
 let profilePicDataURL = '';
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -65,17 +64,5 @@ document.getElementById('profile-pic').addEventListener('change', (e) => {
             profilePicDataURL = (_a = event.target) === null || _a === void 0 ? void 0 : _a.result;
         };
         reader.readAsDataURL(file);
-    }
-});
-downloadBtn.addEventListener('click', () => {
-    const printWindow = window.open('', '', 'height=700,width=700');
-    if (printWindow) {
-        printWindow.document.write('<html><head><title>Resume</title>');
-        printWindow.document.write('<link rel="stylesheet" href="style.css" />');
-        printWindow.document.write('</head><body>');
-        printWindow.document.write(resumeContainer.innerHTML);
-        printWindow.document.write('</body></html>');
-        printWindow.document.close();
-        printWindow.print();
     }
 });
