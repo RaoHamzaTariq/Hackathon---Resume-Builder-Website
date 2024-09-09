@@ -1,6 +1,5 @@
 const form = document.getElementById('resume-form') as HTMLFormElement;
 const resumeContainer = document.getElementById('generated-resume') as HTMLElement;
-const downloadBtn = document.getElementById('download-pdf') as HTMLButtonElement;
 
 let profilePicDataURL: string = '';
 
@@ -76,15 +75,4 @@ form.addEventListener('submit', (e: Event) => {
 });
 
 
-downloadBtn.addEventListener('click', () => {
-  const printWindow = window.open('', '', 'height=700,width=700');
-  if (printWindow) {
-    printWindow.document.write('<html><head><title>Resume</title>');
-    printWindow.document.write('<link rel="stylesheet" href="style.css" />'); 
-    printWindow.document.write('</head><body>');
-    printWindow.document.write(resumeContainer.innerHTML);
-    printWindow.document.write('</body></html>');
-    printWindow.document.close();
-    printWindow.print();
-  }
-});
+
