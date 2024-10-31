@@ -78,17 +78,24 @@ body {
 
 }
 
-.contact-info p {
-    margin-top: 10px;
+.contact-info {
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+
 }
 
 .content {
     flex: 0 0 60%;
-    padding: 40px;
+    flex-direction: column;
+    gap:64px;
+    margin-top: 208px;
+    padding: 0 80px;
 }
 
 .experience-section, .education-section, .languages-section {
     margin-top: 30px;
+    /* flex flex-col gap-10 */
 }
 
 .job, .education-item {
