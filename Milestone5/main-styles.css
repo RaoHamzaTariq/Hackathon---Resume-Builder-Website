@@ -91,6 +91,7 @@ body {
     gap:64px;
     margin-top: 208px;
     padding: 0 80px;
+
 }
 
 .experience-section, .education-section, .languages-section {
@@ -109,11 +110,15 @@ body {
 
 .job, .education-item {
     margin-top: 15px;
-    /* flex flex-col gap-3 */
+    display: flex:
+    flex-direction: column;
+    gap:12px;
 }
 
+
+
 .job-title, .education-degree {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -121,6 +126,7 @@ body {
     color: #808080;
 }
 
-.job-tasks, .education-year {
-    margin-top: 5px;
+.job-tasks{
+    list-style-type:disc;
+    list-style-position: inside;
 }
