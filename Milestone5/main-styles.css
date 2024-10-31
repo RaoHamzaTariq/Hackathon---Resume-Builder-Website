@@ -1,3 +1,109 @@
-*{
+body {
     font-family: Poppins;
+    background-color: azure;
+}
+
+.main {
+    display: flex;
+    margin: 0 208px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    background-color: white;
+}
+
+.sidebar {
+    flex: 0 0 40%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #444d5e;
+    color: #ffffff;
+    padding: 40px 64px;
+    color: white;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
+    background-color: #444d5e;
+    gap: 20px;
+
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+}
+
+.profile-name {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.profile-role {
+    font-size: 24px;
+}
+
+.profile-divider {
+    font-size: 24px;
+    color: white;
+}
+
+.about-section, .skills-section, .contact-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-content {
+    text-align: justify;
+}
+
+.skills-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.contact-info p {
+    margin-top: 10px;
+}
+
+.content {
+    flex: 0 0 60%;
+    padding: 40px;
+}
+
+.experience-section, .education-section, .languages-section {
+    margin-top: 30px;
+}
+
+.job, .education-item {
+    margin-top: 15px;
+}
+
+.job-title, .education-degree {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.job-company, .education-institution {
+    color: #808080;
+}
+
+.job-tasks, .education-year {
+    margin-top: 5px;
 }
