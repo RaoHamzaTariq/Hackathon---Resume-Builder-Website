@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main-styles.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <style>
@@ -10,22 +10,22 @@
         </style>
 </head>
 <body>
-    <main class="flex mx-52">
-        <div class="flex basis-[40%] flex-col justify-center bg-[#444d5e] gap-5 text-white px-16 py-10">
-            <div class=" flex flex-col justify-center my-10 bg-[#444d5e] gap-5">
-            <img src="images.jpg" class="rounded-[50%] w-[250px] h-auto " alt="">
-            <h1 class="text-6xl leading-tight font-bold">Hamza Tariq</h1>
-            <h2 class="text-2xl ">Data Analyst</h2>
-            <hr class="text-white text-2xl">
+    <main class="main">
+        <div class="sidebar">
+            <div class="profile-section ">
+            <img src="https://avatars.githubusercontent.com/u/147372279?v=4" class="profile-image" alt="">
+            <h1 class="profile-name">Rao Hamza Tariq</h1>
+            <h2 class=".profile-role">Data Analyst</h2>
+            <hr class="profile-divider">
         </div>
 
-        <div class="flex flex-col gap-5 mt-5">
-            <h2 class="text-2xl font-bold">ABOUT ME</h2>
-            <p class="text-justify">I am an data analyst, junior data scientist and front-end developer with a strong track record of creating impactful data analytics dashboards and projects. I am currently expanding my expertise in data science and machine learning, taking on diverse projects to solve complex problems using cutting-edge techniques and methodologies. My passion lies in deriving actionable insights from data and translating them into compelling visualizations and content.</p>
+        <div class="about-section">
+            <h2 class="section-title">ABOUT ME</h2>
+            <p class="section-content">I am an data analyst, junior data scientist and front-end developer with a strong track record of creating impactful data analytics dashboards and projects. I am currently expanding my expertise in data science and machine learning, taking on diverse projects to solve complex problems using cutting-edge techniques and methodologies. My passion lies in deriving actionable insights from data and translating them into compelling visualizations and content.</p>
         </div>
-        <div class="flex flex-col mt-5">
-            <h2 class="text-2xl font-bold">SKILLS</h2>
-            <ul class="mt-5 flex flex-col gap-3 list-disc list-inside">
+        <div class="skills-section">
+            <h2 class="section-title">SKILLS</h2>
+            <ul class="skills-list">
                 <li>TypeScript</li>
                 <li>Next JS</li>
                 <li>Data Science</li>
@@ -33,8 +33,8 @@
                 <li>Power BI</li>
             </ul>
         </div>
-        <div class="flex flex-col gap-5 mt-5">
-            <h2 class="text-2xl font-bold">CONTACT</h2>
+        <div class="contact-section">
+            <h2 class="section-title">CONTACT</h2>
             <div class="mt-5 grid gap-3">
                 <p>+92 12354869</p>
                 <p>abchds@gmail.com</p>
@@ -99,4 +99,7 @@
         </div>
     </main>
 </body>
+
+<script src="main.js"></script>
+
 </html>
