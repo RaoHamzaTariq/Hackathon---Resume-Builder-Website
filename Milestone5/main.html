@@ -1,105 +1,198 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-</head>
-<body>
-    <main class="main">
-        <div class="sidebar">
-            <div class="profile-section ">
-            <img src="https://avatars.githubusercontent.com/u/147372279?v=4" class="profile-image" alt="">
-            <h1 class="profile-name">Rao Hamza Tariq</h1>
-            <h2 class=".profile-role">Data Analyst</h2>
-            <hr class="profile-divider">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dynamic Resume Builder</h1>
+      </header>
 
-        <div class="about-section">
-            <h2 class="section-title">ABOUT ME</h2>
-            <p class="section-content">I am an data analyst, junior data scientist and front-end developer with a strong track record of creating impactful data analytics dashboards and projects. I am currently expanding my expertise in data science and machine learning, taking on diverse projects to solve complex problems using cutting-edge techniques and methodologies. My passion lies in deriving actionable insights from data and translating them into compelling visualizations and content.</p>
-        </div>
-        <div class="skills-section">
-            <h2 class="section-title">SKILLS</h2>
-            <ul class="skills-list">
-                <li>TypeScript</li>
-                <li>Next JS</li>
-                <li>Data Science</li>
-                <li>Data Analytics</li>
-                <li>Power BI</li>
-            </ul>
-        </div>
-        <div class="contact-section">
-            <h2 class="section-title">CONTACT</h2>
-            <div class="contact-info">
-                <p>+92 12354869</p>
-                <p>abchds@gmail.com</p>
-                <p>Karachi, Pakistan</p>
-            </div>
-        </div>
-        </div>
-        <div class="content">
+      <div class="form-container">
+        <h2>Resume Builder Form</h2>
+        <form id="resume-form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Rao Hamza Tariq"
+              required
+            />
+
+            <label for="profile-pic">Upload Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*" />
+
+            <label for="role">Role:</label>
+            <input
+              type="text"
+              id="role"
+              placeholder="Software Engineer"
+              required
+            />
+
+            <label for="about-me">About Me:</label>
+            <textarea  
+              cols="5"
+              rows="5"
+              id="about-me"
+              placeholder="Biography"
+              required>
+          </textarea>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" required />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="hamza1234@example.com"
+              required
+            />
+
+            <label for="address">Address:</label>
+            <input
+              type="text"
+              id="address"
+              placeholder="123 Main St, Anytown, City, Country"
+              required
+            />
             
-              <div class="experience-section">  
-                <h2 class="content-title">WORK EXPERIENCE</h2>
-                <div class="job">
-                    <h2 class="job-title">DATA SCIENTIST | 2020 - 2022</h2>
-                    <h4 class="job-company">Xeven Solutions, Karachi</h4>
-                    <p>Tasks:</p>
-                    <ul class="job-tasks">
-                        <li>Analyze the data and make predictive models</li>
-                        <li>Clean the data into meaning information</li>
-                        <li>Demonstrate the methodologies of data analysis</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h2 class="job-title">DATA SCIENTIST | 2020 - 2022</h2>
-                    <h4 class="job-company">Xeven Solutions, Karachi</h4>
-                    <p>Tasks:</p>
-                    <ul class="job-tasks">
-                        <li>Analyze the data and make predictive models</li>
-                        <li>Clean the data into meaning information</li>
-                        <li>Demonstrate the methodologies of data analysis</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h2 class="job-title">DATA SCIENTIST | 2020 - 2022</h2>
-                    <h4 class="job-company">Xeven Solutions, Karachi</h4>
-                    <p>Tasks:</p>
-                    <ul class="job-tasks">
-                        <li>Analyze the data and make predictive models</li>
-                        <li>Clean the data into meaning information</li>
-                        <li>Demonstrate the methodologies of data analysis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="education-section">
-                <h2 class="content-title">EDUCATION</h2>
-                <div class="education-item">
-                    <p>2022 - 2024</p> 
-                    <h3 class="education-degree">Intermediate in Pre-Medical</h3>
-                    <p class="education-institution">Adamjee Govt Science College</p>
-                </div>
-                <div class="education-item">
-                    <p>2022 - 2024</p> 
-                    <h3 class="education-degree">Intermediate in Pre-Medical</h3>
-                    <p class="education-institution">Adamjee Govt Science College</p>
-                </div>
-            </div>
-            <div class="languages-section">
-                <h2 class="content-title">LANGUAGES</h2>
-                <p>English: Fluent</p>
-                <p>Urdu: Native</p>
-            </div>
-        
-        </div>
-    </main>
-</body>
+          </fieldset>
 
-<script src="main.js"></script>
+          <fieldset>
+            <legend>Education</legend>
 
+            <div id="educationList"></div>
+
+            <div id="educationInput">
+            <label for="degree">Degree:</label>
+            <input
+              type="text"
+              id="degree"
+              placeholder="Bachelor of Science"
+              required
+            />
+
+            <label for="duration">Year:</label>
+            <input type="text" id="duration" placeholder="2020-2024" required />
+
+            <label for="institute">Institute:</label>
+            <input
+              type="text"
+              id="institute"
+              placeholder="Institute Name"
+              required
+            />
+          </div>
+
+            <button id="addEducationButton">Add Education</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Work Experience</legend>
+
+            <div id="experienceList"></div>
+
+            <div id="experienceInput">
+            <label for="role">Role:</label>
+            <input
+              type="text"
+              id="role"
+              placeholder="Software Engineer"
+              required
+            />
+
+            <label for="company">Company:</label>
+            <input
+              type="text"
+              id="company"
+              placeholder="Tech Solutions"
+              required
+            />
+
+            <label for="duration">Duration:</label>
+            <input
+              type="text"
+              id="duration"
+              placeholder="Jan 2022 - Dec 2023"
+              required
+            />
+
+
+            <label for="tasks">Tasks:</label>
+            <div id="tasksList"></div>
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="Enter task in company"
+              required
+            />
+             
+              <button id="addTasksButton">Add Tasks</button>
+          </div>
+
+            <button id="addExperienceButton">Add Work Experience</button>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Skills</legend>
+
+            <div id=skillsList></div>
+            <label for="skills">Skills:</label>
+            <input
+              type="text"
+              id="skillInput"
+              placeholder="Next JS"
+              
+            />
+
+            <button id="addSkillButton">Add Skills</button>
+            
+          </fieldset>
+
+          <fieldset>
+            <legend>Languages</legend>
+
+            <div id="languagesList"></div>
+
+            <label for="languages">Languages:</label>
+            <input
+              type="text"
+              id="languageInput"
+              placeholder="English"
+              
+            />
+
+            <button id="addLanguageButton">Add Languages</button>
+            
+          </fieldset>
+
+          <button type="submit">Generate Resume</button>
+          <button id="download-pdf" type="button">Download PDF</button>
+        </form>
+      </div>
+
+      <div class="resume-container">
+        <h2>Your Generated Resume</h2>
+        <div id="generated-resume"></div>
+      </div>
+     
+    </div>
+    <footer>
+    <p>Developed by Rao Hamza Tariq © 2024</p>
+    <p><a href="https://www.linkedin.com/in/rao-hamza-tariq/" target="_blank">LinkedIn</a> | 
+       <a href="https://github.com/RaoHamzaTariq" target="_blank">GitHub</a> | 
+       <a href="mailto:raohamza6767@gmail.com">Email</a></p>
+</footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
